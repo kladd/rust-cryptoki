@@ -940,11 +940,11 @@ pub struct ObjectHandle {
 }
 
 impl ObjectHandle {
-    pub(crate) fn new(handle: CK_OBJECT_HANDLE) -> Self {
+    pub fn new(handle: CK_OBJECT_HANDLE) -> Self {
         ObjectHandle { handle }
     }
 
-    pub(crate) fn handle(&self) -> CK_OBJECT_HANDLE {
+    pub fn handle(&self) -> CK_OBJECT_HANDLE {
         self.handle
     }
 }
